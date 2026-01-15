@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container-box{
+           display: flex;
+           gap: 30px;
+           margin-bottom: 30px;
+
+        }
+        .box-1{
+              background-color: aqua;
+              padding: 20px;
+              border-radius: 10px;
+            }
+
+            .container{
+              display: flex;
+              gap: 20px;
+              flex-wrap:wrap;
+              justify-content: center;
+              margin-bottom: 30px;
+
+            }
+            .box{
+                width: 100px;
+                background-color: blue;
+                padding: 20px;
+            }
+
+            .container-img{
+                display: grid;
+                gap: 3px;
+                grid-template-columns: repeat(6,1fr);
+                grid-template-rows: repeat(6,150px);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .big-layout{
+                grid-column: span 6;
+                grid-row: span 2;
+            }
+            .normal-layout{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+
+
+            .wide-layout{
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+            .small-layout{
+                 grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .container-shadow{
+              justify-content: center;
+               display: grid;
+               margin-top: 10px;
+               gap: 20px;
+               grid-template-columns: repeat(4,1fr);
+               grid-template-rows: repeat(3, 100px) 50px 50px;
+            }
+            .list-item{
+                background-color: gray;
+                padding: 10px;
+            }
+
+            #list-top{
+                grid-column: span 1;
+                grid-row: span 5;
+
+            }
+
+            #fotter{
+                grid-column: span 3;
+                grid-row: span 1;
+
+            }
+            
+
+
+
+
+            @media screen and (max-width:576px) {
+                 .container-box{
+                        flex-direction: column;
+
+            }
+             .box{
+              width: 100%;
+
+        } 
+          .container-img{
+             display: grid;
+                gap: 3px;
+                grid-template-columns: repeat(1,1fr);
+                
+          }  
+
+          .big-layout,.normal-layout,.wide-layout{
+            grid-column: span 1;
+            grid-row: span 1;
+          }
+
+            .container-shadow{
+              justify-content: center;
+               display: grid;
+               margin-top: 10px;
+               gap: 20px;
+               grid-template-columns: repeat(4,1fr);
+               grid-template-rows: repeat(3, 50px) 30px 30px;
+                
+    }   
+    
+}
+    </style>
+</head>
+<body>
+   
+     <div class="container-box">
+        <div class="box-1">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem labore inventore ipsam alias laudantium saepe quas a sit, voluptatum, provident optio, ipsum repellendus impedit atque! Eos minima est officia mollitia!</p>
+        </div>
+        <div class="box-1">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem labore inventore ipsam alias laudantium saepe quas a sit, voluptatum, provident optio, ipsum repellendus impedit atque! Eos minima est officia mollitia!</p>
+        </div>
+     </div>
+
+
+     
+    <div class="container">
+
+      <div class="box">item1</div>
+      <div class="box">item2</div>
+      <div class="box">item3</div>
+      <div class="box">item4</div>
+      <div class="box">item5</div>
+      <div class="box">item6</div>
+      <div class="box">item7</div>
+      <div class="box">item8</div>
+      <div class="box">item9</div>
+      <div class="box">item10</div>
+      <div class="box">item11</div>
+      <div class="box">item12</div>
+      <div class="box">item13</div>
+      <div class="box">item14</div>
+      <div class="box">item15</div>
+      <div class="box">item16</div>
+      <div class="box">item17</div>
+      <div class="box">item18</div>
+      <div class="box">item19</div>
+      <div class="box">item20</div>
+      <div class="box">item21</div>
+      <div class="box">item22</div>
+      <div class="box">item23</div>
+      <div class="box">item24</div>
+      <div class="box">item25</div>
+      <div class="box">item26</div>
+      <div class="box">item27</div>
+      <div class="box">item28</div>
+      <div class="box">item29</div>
+      <div class="box">item30</div>
+       
+     </div>
+ 
+     <div class="container-img">
+        <div class="big-layout">
+            <img src="images/A.jpg" alt="">
+        </div>
+        <div class="normal-layout">
+            <img src="images/B.jpg" alt="">
+        </div>
+        <div class="normal-layout">
+            <img src="images/C.jpg" alt="">
+        </div>
+        <div class="wide-layout">
+            <img src="images/D.jpg" alt="">
+        </div>
+        <div class="wide-layout">
+            <img src="images/E.jpg" alt="">
+        </div>
+        <div class="normal-layout">
+            <img src="images/F.jpg" alt="">
+        </div>
+        <div class="small-layout">
+            <img src="images/G.jpg" alt="">
+        </div>
+        <div class="small-layout">
+            <img src="images/G.jpg" alt="">
+        </div>
+      
+        <div class="normal-layout">
+            <img src="images/I.jpg" alt="">
+        </div>
+         <div class="small-layout">
+            <img src="images/G.jpg" alt="">
+        </div>
+         <div class="small-layout">
+            <img src="images/G.jpg" alt="">
+        </div>
+       
+     </div>
+      
+<div class="container-shadow">
+        <div id="list-top" class="list-item">list1</div>
+        <div class="list-item">list2</div>
+        <div class="list-item">list3</div>
+        <div class="list-item">list4</div>
+        <div class="list-item">list5</div>
+        <div class="list-item">list6</div>
+        <div class="list-item">list7</div>
+        <div class="list-item">list8</div>
+        <div class="list-item">list9</div>
+        <div class="list-item">list10</div>
+        <div id="fotter" class="list-item">list11</div>
+        <div id="fotter" class="list-item">list12</div>
+  </div>
+</body>
+</html>
